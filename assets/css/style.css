@@ -9,3 +9,38 @@
 a {
     text-decoration: none;
 }
+
+body {
+    background: #141414;
+}
+
+h1 > span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+    text-transform: uppercase;
+
+    font-size: 8em;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+
+    background: linear-gradient(#262626, #eaeaea, #262626);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h1 > span:nth-child(1) {
+    z-index: 2;
+}
+
+h1 > span:nth-child(2) {
+    z-index: 1;
+    text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626, 4px 4px 0 #262626, 5px 5px 0 #262626,
+        1px 1px 0 #262626, 6px 20px 20px #000, -1px -1px 0 #fff;
+}
